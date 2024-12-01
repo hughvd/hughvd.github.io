@@ -38,10 +38,29 @@
                   </p>
                   <p>
                     I have previously worked alongside <a href="https://www.neelnanda.io/about">Neel Nanda</a> through the <a href="https://www.matsprogram.org/">Machine Learning Alignment and Thoery Scholors Program</a>.
-                    At Michigan, I am involved with the <a href="https://lit.eecs.umich.edu/">Language and Information Technologies Lab</a> and have worked alongside <a href="https://ajyl.github.io/about">Dr. Andrew Lee</a> and <a href="https://web.eecs.umich.edu/~mihalcea/">Prof. Rada Mihaclea</a> where I have leveraged interpretibility to study toxicity in LLMs. 
-                    Since this past summer, I have been interning at the <a href="https://www.kasl.ai/">Krueger AI Safety Lab at the University of Cambridge</a> working alongside <a href="https://davidscottkrueger.com/">Prof. David Krueger</a>, <a href="https://ekdeepslubana.github.io/">Dr. Ekdeep Singh Lubana</a>, and <a href="https://www.linkedin.com/in/laura-ruis-333aaa73/">Laura Ruis</a> to develop new inference-time methods for model behavioral control.
-                    Most recently, I have also been working with <a href="https://sites.google.com/view/htanaka/home">Hidenori Tanaka</a> at the <a href="https://cbs.fas.harvard.edu/">Harvard Center for Brain Science</a> to mechanistically study in-context learning. 
+                    
 
+                  </p>
+
+                  <p>At Michigan, I am involved with the <a href="https://lit.eecs.umich.edu/">Language and Information Technologies Lab</a>
+                  and have worked alongside <a href="https://ajyl.github.io/about">Dr. Andrew Lee</a> and <a
+                    href="https://web.eecs.umich.edu/~mihalcea/">Prof. Rada Mihaclea</a> where I have leveraged interpretibility to study
+                  toxicity in LLMs.
+                  </p>
+
+                  <p>
+                    Since this past summer, I have been interning at the <a href="https://www.kasl.ai/">Krueger AI Safety Lab at the
+                      University of Cambridge</a> working alongside <a href="https://davidscottkrueger.com/">Prof. David Krueger</a>, <a
+                      href="https://ekdeepslubana.github.io/">Dr. Ekdeep Singh Lubana</a>, and <a
+                      href="https://www.linkedin.com/in/laura-ruis-333aaa73/">Laura Ruis</a> to develop new inference-time methods for model
+                    behavioral control.
+                    
+                  </p>
+
+                  <p>
+                    Most recently, I have also been working with <a href="https://sites.google.com/view/htanaka/home">Hidenori Tanaka</a> at
+                    the <a href="https://cbs.fas.harvard.edu/">Harvard Center for Brain Science</a> to mechanistically study in-context
+                    learning.
                   </p>
 
 
@@ -82,25 +101,70 @@
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/toxicity.png" alt="Toxicity DPO" width="160" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2401.01967">
+                    Andrew Lee, Xiaoyan Bai, Itamar Pres, Martin Wattenberg, Jonathan K. Kummerfeld, Rada Mihalcea
+                    <papertitle>A Mechanistic Understanding of Alignment Algorithms: A Case Study on DPO and Toxicity</papertitle>
+                  </a>
+                  <br>
+                  <a>Andrew Lee</a>,
+                  <a>Xiaoyan Bai</a>,
+                  <strong>Itamar Pres</strong>,
+                  <a>Martin Wattenberg</a>,
+                  <a>Jonathan K. Kummerfeld</a>,
+                  and 
+                  <a>Rada Mihalcea</a>
+                  <br>
+                  <em>ICML 2024</em>, 2024 <font color="red"> (Oral)</font>
+                  <br>
+
+
+                  <p>
+                    We study a popular algorithm, direct preference optimization (DPO), and the mechanisms by which it reduces
+                    toxicity. We first study how toxicity is represented and elicited in pre-trained language
+                    models (GPT2-medium, Llama2-7b). We then apply DPO to reduce toxicity and find that capabilities learned from pre-training are not removed,
+                    but rather bypassed. We use this insight to demonstrate a simple method to un-align the models,
+                    reverting them back to their toxic behavior.
+
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/sae.png" alt="SAEs and Formal Languages" width="160" style="border-style: none">
                 </td>
                 <td width="75%" valign="middle">
-                  <a href="https://arxiv.org/abs/2410.11767">
-                    <papertitle>Analyzing (In)Abilities of SAEs via Formal Languages</papertitle>
+                  <a href="https://arxiv.org/abs/2401.01967">
+                    Andrew Lee, Xiaoyan Bai, Itamar Pres, Martin Wattenberg, Jonathan K. Kummerfeld, Rada Mihalcea
+                    <papertitle>A Mechanistic Understanding of Alignment Algorithms: A Case Study on DPO and Toxicity</papertitle>
                   </a>
                   <br>
-                  <a href="https://in.linkedin.com/in/abhinav-menon-833404229">Abhinav Menon</a>,
-                  <a href="https://www.iiit.ac.in/faculty/manish-shrivastava/">Manish Srivastava</a>,
-                  <a href="https://davidscottkrueger.com">David Krueger</a>, and
-                  <strong>Ekdeep Singh Lubana</strong>
+                  <a>Andrew Lee</a>,
+                  <a>Xiaoyan Bai</a>,
+                  <strong>Itamar Pres</strong>,
+                  <a>Martin Wattenberg</a>,
+                  <a>Jonathan K. Kummerfeld</a>,
+                  and
+                  <a>Rada Mihalcea</a>
                   <br>
-                  <em>NeurIPS workshop on Foundation Model Interventions </em>, 2024 <font color="red"> (Spotlight)
-                  </font>
+                  <em>ICML 2024</em>, 2024 <font color="red"> (Oral)</font>
                   <br>
-                  <!--               <a href="data/sae.bib">bibtex</a> / <a href="https://arxiv.org/abs/2410.11767">arXiv</a> -->
-                  <p>We use Formal languages to analyze the limitations of SAEs, finding, similar to prior work in
-                    disentangled representation learning, that SAEs find correlational features; explicit biasing is
-                    necessary to induce causality.</p>
+              
+              
+                  <p>
+                    We study a popular algorithm, direct preference optimization (DPO), and the mechanisms by which it reduces
+                    toxicity. We first study how toxicity is represented and elicited in pre-trained language
+                    models (GPT2-medium, Llama2-7b). We then apply DPO with a carefully crafted pairwise dataset
+                    to reduce toxicity. We examine how the resulting models avert toxic outputs, and find that capabilities learned
+                    from pre-training are not removed,
+                    but rather bypassed. We use this insight to demonstrate a simple method to un-align the models,
+                    reverting them back to their toxic behavior.
+              
+                  </p>
                 </td>
               </tr>
 
