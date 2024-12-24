@@ -3,10 +3,16 @@
     gap: 30px;
     margin-bottom: 40px;
   }
-  
+
   .publication-image {
     flex-shrink: 0;
     width: 160px;
+  }
+  
+  .publication-image img {
+    width: 100%;
+    border-style: none;
+    display: block;
   }
   
   .publication-content h3 {
