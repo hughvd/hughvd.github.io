@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+  
+  .nav-name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--link-color);
+  }
+  
+  /* Mobile navigation */
+  @media (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .nav-links {
+      gap: 20px;
+    }
+  }
