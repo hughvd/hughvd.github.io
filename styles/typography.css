@@ -1,0 +1,21 @@
+:root {
+    --font-size-base: 16px;
+    --font-size-small: 0.875rem;
+    --font-size-large: 1.25rem;
+    --font-size-xl: 1.5rem;
+    
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+    line-height: 1.2;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-unit);
+  }

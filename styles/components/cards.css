@@ -1,0 +1,26 @@
+.entry {
+    display: flex;
+    gap: var(--spacing-unit);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+  }
+  
+  .entry-image {
+    width: 160px;
+    flex-shrink: 0;
+  }
+  
+  .entry-image img {
+    width: 100%;
+    border-style: none;
+  }
+  
+  .entry-content {
+    flex-grow: 1;
+  }
+  
+  .entry-title {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-medium);
+    color: var(--primary);
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+  }
