@@ -1,7 +1,6 @@
 /* Import other stylesheets */
 @import 'colors.css';
 @import 'typography.css';
-@import 'components/nav.css';
 @import 'components/publications.css';
 @import 'components/profile.css';
 
