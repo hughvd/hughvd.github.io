@@ -1,223 +1,203 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Itamar Hagay Pres</title>
-
-  <meta name="author" content="Itamar Hagay Pres">
+  <meta charset="UTF-8">
+  <title>Hugh Van Deventer V</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <style>
+    /* Core styles */
+    :root {
+      --primary-color: #2d3748;
+      --accent-color: #4a90e2;
+      --background-color: #ffffff;
+      --text-color: #333333;
+      --spacing-unit: 2.5%;
+    }
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation */
+    nav {
+      padding: 1rem var(--spacing-unit);
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Main content */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-unit);
+    }
+
+    /* Profile section */
+    .profile {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 2rem;
+      padding: 4rem 0;
+    }
+
+    .profile-image {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    /* Section styling */
+    .section {
+      margin: 4rem 0;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    /* Card grid for projects/publications */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .profile {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style> -->
 </head>
 
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Hugh Flournoy Van Deventer V</name>
-                  </p>
+  <nav>
+    <h1 style="margin: 0;">Hugh V.</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/projects">Projects</a>
+      <a href="/blog">Blog</a>
+      <a href="/notes">Notes</a>
+    </div>
+  </nav>
 
-                  <!-- Description -->
-                  <p>I am an undergraduate at the University of Michigan studying Computer Science with a minor in
-                    Mathematics. My primary
-                    focus is on making artificial intelligence systems safer, more interpretable, and better
-                    aligned with human values. More specifically, I aim to explore how large language models (LLMs) can
-                    operate ethically
-                    and effectively in diverse and dynamic contexts.
+  <div class="container">
+    <section class="profile">
+      <div>
+        <h2>Computer Science & Mathematics</h2>
+        <p>
+            I am a senior at the University of Michigan double majoring in Mathematics and 
+            Interdisciplinary Physics with a minor in Computer Science. I am fascinated by 
+            the beautiful mathematics behind AI&ML systems. In particular, I am interested 
+            in understanding how simple rules can give rise to complex behaviors - whether 
+            that's in physics, mathematical systems, or modern AI. I think this perspective
+            is especially relevent to the question of how we can ensure AI systems 
+            remain reliable and beneficial as they become more powerful, which I believe
+            is an extremely important question. To this end, I am applying to Computer
+            Science masters programs to transition to research in AI Safety.
+        </p>
+        <p>
+          Currently working as a Data Science Fellow at the UM Center for Academic Innovation
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="mailto:email@example.com">Email</a> &nbsp;/&nbsp;
+          <a href="/data/resume.pdf">CV</a> &nbsp;/&nbsp;
+          <a href="https://github.com/hughvd">GitHub</a> &nbsp;/&nbsp;
+          <a href="https://linkedin.com/in/hughvandeventer">LinkedIn</a>
+        </div>
+      </div>
+      <img src="/api/placeholder/400/400" alt="Profile" class="profile-image">
+    </section>
 
-                  </p>
-          
+    <section class="section">
+      <h3 class="section-title">Featured Work</h3>
+      <div class="card-grid">
+        <!-- Publication card -->
+        <div class="card">
+          <h4>Competition Dynamics in Learning</h4>
+          <p>Published work on understanding in-context learning through Markov chain mixtures...</p>
+          <a href="#">Read More →</a>
+        </div>
+        <!-- Project card -->
+        <div class="card">
+          <h4>AI Safety Implementation</h4>
+          <p>Research project focusing on new methods for model behavioral control...</p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+    </section>
 
-                  <p>At Michigan, I am involved with the <a href="https://lit.eecs.umich.edu/">Language and Information Technologies Lab</a>
-                  and have worked alongside <a href="https://ajyl.github.io/about">Dr. Andrew Lee</a> and <a
-                    href="https://web.eecs.umich.edu/~mihalcea/">Prof. Rada Mihalcea</a> to leverage interpretability to study
-                  toxicity and personas in LLMs.
-                  </p>
+    <section class="section">
+      <h3 class="section-title">Recent Posts</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Understanding Transformer Architecture</h4>
+          <p>A deep dive into attention mechanisms and their implications...</p>
+          <a href="#">Read Post →</a>
+        </div>
+        <div class="card">
+          <h4>Notes: Advanced Algorithm Design</h4>
+          <p>Course notes and insights from EECS 477...</p>
+          <a href="#">View Notes →</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-                  <p>
-                    The past summer and fall, I interned with the <a href="https://www.kasl.ai/">Krueger AI Safety Lab</a> at the
-                    University of Cambridge working alongside <a href="https://davidscottkrueger.com/">Prof. David Krueger</a>, <a
-                      href="https://ekdeepslubana.github.io/">Dr. Ekdeep Singh Lubana</a>, and <a
-                      href="https://x.com/LauraRuis">Laura Ruis</a> to develop new inference-time methods for model
-                    behavioral control.
-                    
-                  </p>
-
-                  <p>
-                    Most recently, I have also been working with <a href="https://sites.google.com/view/htanaka/home">Hidenori Tanaka</a> at
-                    the <a href="https://cbs.fas.harvard.edu/">Harvard Center for Brain Science</a> to mechanistically study in-context
-                    learning.
-                  </p>
-
-
-                  <p>
-                    I first started doing interpretability research with <a href="https://www.neelnanda.io/about">Neel Nanda</a> through the <a
-                      href="https://www.matsprogram.org/">ML Alignment & Theory Scholars</a> Program.
-                  </p>
-
-
-                  <!-- Stuff -->
-                  <p style="text-align:center">
-                    <a href="mailto:hughv@umich.edu">Email</a> &nbsp/&nbsp
-                    <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/hughvandeventer/">LinkedIn</a>
-                  </p>
-                </td>
-
-                <!-- Front image -->
-                <td style="padding:2.5%;width:40%;max-width:40%;text-align: left">
-                  <a href="images/headshot.jpg"><img style="width:100%;max-width:100%;display: block" alt="profile photo"
-                      src="images/headshot.jpg" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
-          <!-- Publications -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Publications (* denotes equal contribution)</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/comp.png" alt="Comp Dynamics" width="160" style="border-style: none">
-                </td>
-                <td width="75%" valign="middle">
-                  <a href="https://arxiv.org/abs/2412.01003">
-                    <papertitle>Competition Dynamics Shape Algorithmic Phases of In-Context Learning</papertitle>
-                  </a>
-                  <br>
-                  <a>Core Francisco Park</a>,
-                  <a>Ekdeep Singh Lubana</a>,
-                  <strong>Itamar Pres</strong>,
-                  and
-                  <a>Hidenori Tanaka</a>
-                  <br>
-                  <em>Preprint (Under Review at ICLR)</em>, 2025
-                  <br>
-              
-              
-                  <p> 
-                    We introduce a framework for understanding in-context learning (ICL) using a synthetic task based on Markov chain
-                    mixtures. We find this task replicates most of the previously described ICL phenomena. We identify four distinct algorithmic phases, blending unigram or bigram statistics with fuzzy retrieval or inference.
-                    These phases compete dynamically, revealing sharp transitions in ICL behavior due to changes in training conditions,
-                    such as data diversity and context size. I’m proud to have led the interpretability work,
-                    quantifying neuron memorization and tracking attention head evolution during training—check it out!
-          
-                  </p>
-                </td>
-              </tr>
-              
-
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/benchmark.png" alt="CAA Benchmark" width="160" style="border-style: none">
-                </td>
-                <td width="75%" valign="middle">
-                  <a href="https://arxiv.org/abs/2410.17245">
-                    <papertitle>Towards Reliable Evaluation of Behavior Steering Interventions in LLMs</papertitle>
-                  </a>
-                  <br>
-                  <strong>Itamar Pres</strong>,
-                  <a>Laura Ruis</a>,
-                  <a>Ekdeep Singh Lubana</a>,
-                  and
-                  <a>David Krueger</a>
-                  
-                  <br>
-                  <em>NeurIPS workshop on Foundation Model Interventions</em>, 2024 <font color="red"> (Spotlight)</font>
-                  <br>
-              
-              
-                  <p>
-                  We propose a robust evaluation pipeline for behavioral steering interventions in LLMs, addressing gaps in current
-                  methods like subjective metrics and lack of comparability. Our pipeline aligns with downstream tasks, considers model
-                  likelihoods, enables cross-behavioral comparisons, and includes baselines. Testing interventions like Contrastive
-                  Activation Addition (CAA) and Inference-Time Intervention (ITI), we find their efficacy varies by behavior, with results
-                  often overstated and critical distinctions between promoting and suppressing behaviors overlooked.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/toxicity.png" alt="Toxicity DPO" width="160" style="border-style: none">
-                </td>
-                <td width="75%" valign="middle">
-                  <a href="https://arxiv.org/abs/2401.01967">
-                    <papertitle>A Mechanistic Understanding of Alignment Algorithms: A Case Study on DPO and Toxicity</papertitle>
-                  </a>
-                  <br>
-                  <a>Andrew Lee</a>,
-                  <a>Xiaoyan Bai</a>,
-                  <strong>Itamar Pres</strong>,
-                  <a>Martin Wattenberg</a>,
-                  <a>Jonathan K. Kummerfeld</a>,
-                  and
-                  <a>Rada Mihalcea</a>
-                  <br>
-                  <em>ICML</em>, 2024 <font color="red"> (Oral)</font>
-                  <br>
-              
-              
-                  <p>
-                    We study a popular algorithm, direct preference optimization (DPO), and the mechanisms by which it reduces
-                    toxicity. We first study how toxicity is represented and elicited in pre-trained language
-                    models (GPT2-medium, Llama2-7b). We then apply DPO to reduce toxicity and find that capabilities learned from
-                    pre-training are not removed,
-                    but rather bypassed. We use this insight to demonstrate a simple method to un-align the models,
-                    reverting them back to their toxic behavior.
-              
-                  </p>
-                </td>
-              </tr>
-
-
-          
-
-
-
-              <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:0px">
-                      <br>
-                      <p style="text-align:right;font-size:small;">
-                        Website template source available <a
-                          href="https://github.com/jonbarron/jonbarron_website">here</a>.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-        </td>
-      </tr>
-  </table>
+  <footer style="text-align: center; padding: 2rem 0; margin-top: 4rem; border-top: 1px solid #eee;">
+    <p>© 2024 Hugh Van Deventer V</p>
+  </footer>
 </body>
-
 </html>
