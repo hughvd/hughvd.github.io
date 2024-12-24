@@ -1,29 +1,26 @@
 nav {
-    padding: 1rem var(--spacing-unit);
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+  
+  .nav-name {
+    font-size: 20px;  /* or whatever size you prefer */
+    font-weight: 500;
   }
   
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 30px;  /* spacing between links */
   }
   
   .nav-links a {
-    color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    color: var(--text-primary);
   }
   
   .nav-links a:hover {
-    color: var(--accent-color);
-  }
-  
-  .nav-name {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 500;
+    color: var(--link-color);
   }
