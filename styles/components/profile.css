@@ -1,22 +1,25 @@
 .profile {
     display: flex;
-    gap: 40px;
-    align-items: start;  /* Aligns text with top of image */
+    gap: 60px;  /* Increased gap between text and image */
     padding: 20px 0;
   }
   
   .bio {
-    flex: 3;  /* Takes up more space than the image */
+    flex: 3;
+  }
+  
+  .bio h1 {  /* For your name */
+    margin-bottom: 30px;  /* Add space below the name */
   }
   
   .photo {
-    flex: 2;  /* Takes up less space than the bio */
+    flex: 2;
+    margin-top: 70px;  /* This will push the image down to align with paragraphs */
   }
   
   .photo img {
     width: 100%;
     display: block;
-    border-radius: 4px;
   }
   
   /* For mobile devices */
@@ -26,6 +29,7 @@
     }
     
     .photo {
+      margin-top: 0;  /* Remove top margin on mobile */
       max-width: 300px;
       margin: 0 auto;
     }
