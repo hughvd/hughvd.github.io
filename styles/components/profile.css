@@ -14,12 +14,23 @@
   
   .photo {
     flex: 2;
-    margin-top: 70px;  /* This will push the image down to align with paragraphs */
+    margin-top: 80px;  /* This will push the image down to align with paragraphs */
   }
   
   .photo img {
     width: 100%;
     display: block;
+  }
+
+  .links {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .links a {
+    margin: 0 10px;
+    color: var(--link-color);
+    text-decoration: none;
   }
   
   /* For mobile devices */
