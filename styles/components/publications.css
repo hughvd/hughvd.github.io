@@ -1,0 +1,24 @@
+.publication {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .publication-image {
+    flex-shrink: 0;
+    width: 160px;
+  }
+  
+  .publication-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+  }
+  
+  .authors {
+    margin-bottom: 5px;
+  }
+  
+  .venue {
+    font-style: italic;
+    margin-bottom: 15px;
+  }

@@ -8,112 +8,68 @@
 </head>
 
 <body>
-  <nav>
-    <h1 style="margin: 0;">Hugh V.</h1>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/blog">Blog</a>
-      <a href="/notes">Notes</a>
-    </div>
-  </nav>
-
   <div class="container">
-    <section class="profile">
-      <div>
-        <h2>Hugh Flournoy Van Deventer V</h2>
+    <!-- Profile Section -->
+    <div class="profile">
+      <div class="bio">
+        <h1>Hugh Flournoy Van Deventer V</h1>
         <p>
           I am a senior at the University of Michigan double majoring in Mathematics and 
           Interdisciplinary Physics with a minor in Computer Science. I am fascinated by 
           the beautiful mathematics behind AI&ML systems. In particular, I am interested 
           in understanding how simple rules can give rise to complex behaviors - whether 
-          that's in physics, mathematical systems, or modern AI. I think this perspective
-          is especially relevent to the question of how we can ensure AI systems 
-          remain reliable and beneficial as they become more powerful, which I believe
-          is an extremely important question.
+          that's in physics, mathematical systems, or modern AI. I think this perspective 
+          is especially relevent to the question of how we can ensure AI systems remain 
+          reliable and beneficial as they become more powerful, which I believe is an 
+          extremely important question.
         </p>
         <p>
           Currently working as a Data Science Fellow at the UM Center for Academic Innovation
         </p>
-        <div style="margin-top: 2rem;">
-          <a href="mailto:hughv@umich.edu">Email</a> &nbsp;/&nbsp;
-          <a href="/data/resume.pdf">CV</a> &nbsp;/&nbsp;
-          <a href="https://github.com/hughvd">GitHub</a> &nbsp;/&nbsp;
+        <div class="links">
+          <a href="mailto:hughv@umich.edu">Email</a>
+          <a href="data/resume.pdf">CV</a>
+          <a href="https://github.com/hughvd">GitHub</a>
           <a href="https://linkedin.com/in/hughvandeventer">LinkedIn</a>
         </div>
       </div>
-      <img src="/images/headshot.jpg" alt="Profile" class="profile-image">
-    </section>
+      <div class="photo">
+        <img src="images/headshot.jpg" alt="Hugh Van Deventer">
+      </div>
+    </div>
 
     <!-- Publications Section -->
-    <section class="section">
-      <h3 class="section-title">Publications (* denotes equal contribution)</h3>
+    <div class="section">
+      <h2>Publications (* denotes equal contribution)</h2>
       
-      <div class="publication-entry">
-        <div class="entry-image">
-          <img src="images/comp.png" alt="Course Recommendations">
+      <div class="publication">
+        <div class="publication-image">
+          <img src="images/rec.png" alt="Course Recommendations">
         </div>
-        <div class="entry-content">
-          <a href="#">
-            <div class="entry-title">From Interests to Insights: An LLM Approach to Course Recommendations Using Natural Language Queries</div>
-          </a>
-          <div class="entry-authors">
+        <div class="publication-content">
+          <h3>
+            <a href="#">From Interests to Insights: An LLM Approach to Course Recommendations Using Natural Language Queries</a>
+          </h3>
+          <div class="authors">
             <a>Andrew Lee</a>,
             <strong>Hugh Van Deventer</strong>,
+            and
             <a>Christopher Brooks</a>
           </div>
-          <div class="entry-venue">Under Review at LAK, 2025</div>
-          <div class="entry-description">
+          <div class="venue">Under Review at LAK, 2025</div>
+          <p>
             We propose a novel methodology for course recommendations that leverages large language models
             to bridge the gap between students' natural language expressions of interests and formal course
             descriptions. Through extensive evaluation, we demonstrate that our approach not only provides
             more relevant recommendations but also offers interpretable explanations for its suggestions.
-          </div>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Featured Projects Section -->
-    <section class="section">
-      <h3 class="section-title">Featured Projects</h3>
-      <div class="publication-entry">
-        <div class="entry-image">
-          <img src="images/project1.png" alt="AI Safety Project">
-        </div>
-        <div class="entry-content">
-          <a href="#">
-            <div class="entry-title">Physics-Inspired Neural Networks for PDEs</div>
-          </a>
-          <div class="entry-venue">Fall 2024</div>
-          <div class="entry-description">
-            Developed novel neural network architectures inspired by physical conservation laws
-            for solving partial differential equations. Implemented using PyTorch and demonstrated
-            significant improvements in accuracy and efficiency compared to traditional numerical methods.
-          </div>
-        </div>
-      </div>
-
-      <div class="publication-entry">
-        <div class="entry-image">
-          <img src="images/project2.png" alt="Second Project">
-        </div>
-        <div class="entry-content">
-          <a href="#">
-            <div class="entry-title">Deep Learning for Quantum Error Correction</div>
-          </a>
-          <div class="entry-venue">Summer 2024</div>
-          <div class="entry-description">
-            Applied machine learning techniques to improve quantum error correction codes.
-            Created a custom simulation environment for testing various correction strategies
-            and demonstrated improved error rates over classical methods.
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer>
+      <p>Website template source available <a href="https://github.com/jonbarron/jonbarron_website">here</a>.</p>
+    </footer>
   </div>
-
-  <footer style="text-align: center; padding: 2rem 0; margin-top: 4rem; border-top: 1px solid #eee;">
-    <p>© 2024 Hugh Van Deventer V</p>
-  </footer>
 </body>
 </html>

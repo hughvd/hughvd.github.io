@@ -1,15 +1,6 @@
 :root {
-    /* Color palette */
-    --primary: #2962ff;
-    --secondary: #e91e63;
-    --text-primary: #333333;
-    --text-secondary: #555555;
-    --background: #ffffff;
-    --surface: #f5f5f5;
-    
-    /* Functional colors */
-    --link-color: var(--primary);
-    --link-hover: #1565c0;
-    --header-color: var(--text-primary);
-    --body-color: var(--text-secondary);
-  }
+  --text-primary: #2a2a2a;
+  --text-secondary: #666;
+  --link-color: #2962ff;
+  --border-color: #eee;
+}
