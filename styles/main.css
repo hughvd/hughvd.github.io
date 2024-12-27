@@ -5,6 +5,7 @@
 @import 'components/publications.css';
 @import 'components/profile.css';
 @import 'components/projects.css';
+@import 'components/blog.css';
 
 /* Base layout styles */
 .container {
@@ -23,4 +24,13 @@
   .profile {
     flex-direction: column;
   }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin-right: 0;
+  padding-right: calc(100vw - 100%);
 }
