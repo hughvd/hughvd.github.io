@@ -6,6 +6,7 @@
 @import 'components/profile.css';
 @import 'components/projects.css';
 @import 'components/blog.css';
+@import 'components/notes.css';
 
 /* Base layout styles */
 .container {
