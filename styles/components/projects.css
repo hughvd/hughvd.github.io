@@ -1,129 +1,134 @@
-/* Project grid layout */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
-  }
-  
-  /* Featured project styles - using flexbox */
-  .featured-project {
-    display: flex;
-    gap: 30px;
-    padding: var(--spacing-lg);
-    background: var(--featured-bg);
-    border-radius: var(--border-radius);
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  .featured-project .project-content {
-    flex: 1.5;
-  }
-  
-  .featured-project .project-media {
-    flex: 1;
-    min-width: 0; /* Prevents flex item from overflowing */
-  }
-  
-  /* Project content styles */
-  .project-content {
-    padding: var(--spacing-md);
-  }
-  
-  .project-header {
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .project-title {
-    font-size: var(--text-lg);
-    margin: 0 0 var(--spacing-sm) 0;
-    color: var(--text-primary);
-  }
-  
-  .project-description {
-    color: var(--text-secondary);
-    line-height: var(--leading-normal);
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .project-highlights {
-    margin-bottom: var(--spacing-md);
-  }
-  
-  /* Media styles (images and videos) */
-  .project-image, .project-video {
-    width: 100%;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
-  }
-  
-  .project-video {
-    aspect-ratio: 16 / 9;
+/* Page header styling */
+.page-header {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Featured project styling */
+.featured-project {
+    margin-bottom: 80px;
+    padding: 0px;
     background: var(--bg-secondary);
-  }
-  
-  .project-card .project-image {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Tag system */
-  .project-tags {
+    border-radius: 12px;
+}
+
+.featured-project .project-content {
+    margin-bottom: 30px;
+}
+
+.project-header {
+    margin-bottom: 24px;
+}
+
+.project-title {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+/* Tag system */
+.project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-xs);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .tag {
+    gap: 12px;
+    margin-bottom: -12px;
+}
+
+.tag {
     background: var(--tag-bg);
-    padding: 4px 8px;
-    border-radius: var(--border-radius-sm);
-    font-size: var(--text-sm);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
     color: var(--text-secondary);
-  }
-  
-  /* Link styles */
-  .project-links {
-    display: flex;
-    gap: var(--spacing-sm);
-  }
-  
-  .project-links a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: var(--text-sm);
-  }
-  
-  .project-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Project card styles */
-  .project-card {
+}
+
+.project-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+}
+
+.project-highlights {
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+/* Project video */
+.project-video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color); /* Uses your existing border color variable */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* Regular project cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.project-card {
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    background: var(--card-bg);
-  }
-  
-  .project-card:hover {
+    background: var(--bg-primary);
+}
+
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .featured-project {
-      flex-direction: column;
-    }
-    
+}
+
+.project-card .project-content {
+    padding: 24px;
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Link styles */
+.project-links {
+    display: flex;
+    gap: 20px;
+}
+
+.project-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
     .project-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     
-    .featured-project .project-media {
-      order: -1; /* Places media above content on mobile */
+    .featured-project {
+        padding: 24px;
     }
-  }
+}

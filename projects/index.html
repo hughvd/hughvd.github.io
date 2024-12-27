@@ -1,151 +1,137 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects - Hugh Van Deventer V</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <title>Projects - Hugh Van Deventer V</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation -->
-    <nav>
-      <div class="nav-name">Hugh V.</div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/projects" class="active">Projects</a>
-        <a href="/blog">Blog</a>
-        <a href="/notes">Notes</a>
-      </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-      <h1>Projects</h1>
-      <p class="text-secondary">
-        Doing cool stuff
-      </p>
-    </header>
-
-    <!-- Featured Project -->
-    <section class="featured-project">
-      <div class="project-content">
-        <div class="project-header">
-          <h2 class="project-title">Course Recommendation System</h2>
-          <div class="project-tags">
-            <span class="tag">Machine Learning</span>
-            <span class="tag">NLP</span>
-            <span class="tag">LLMs</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-        <p class="project-description">
-          An innovative approach to course recommendations using large language models to match student interests 
-          with course offerings. This system processes natural language queries about academic interests and 
-          career goals to generate personalized course suggestions with detailed explanations.
-        </p>
-        <p class="project-highlights">
-          <strong>Key Achievements:</strong>
-          • Presented at multiple conferences
-          • Paper under review at ACM TORS
-          • Webapp created (waiting on deployment approval)
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/hughvd/UM-CAI-Fellowship" class="link-primary">View Code</a>
-          <a href="data/Atlas_Recommender_Paper.pdf" class="link-primary">Read Paper</a>
-          <a href="#demo" class="link-primary">Watch Demo</a>
-        </div>
-      </div>
-      <div class="project-media">
-        <video 
-          class="project-video"
-          controls
-          poster="images/EmbRecommenderDiagram.png"
-          preload="none">
-          <source src="images/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
-
-    <!-- Project Grid -->
-    <section class="project-grid">
-      <!-- Physics Simulation Project -->
-      <article class="project-card">
-        <img src="images/nbody.png" alt="N-Body Simulation" class="project-image">
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">N-Body Physics Simulator</h3>
-            <div class="project-tags">
-              <span class="tag">Physics</span>
-              <span class="tag">C++</span>
-              <span class="tag">OpenGL</span>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-name">Hugh V.</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/projects" class="active">Projects</a>
+                <a href="/blog">Blog</a>
+                <a href="/notes">Notes</a>
             </div>
-          </div>
-          <p class="project-description">
-            A high-performance gravitational n-body simulator with real-time visualization. 
-            Implements various numerical integration methods and supports interactive parameter adjustment.
-          </p>
-          <div class="project-links">
-            <a href="#" class="link-primary">View Code</a>
-            <a href="#" class="link-primary">Documentation</a>
-          </div>
-        </div>
-      </article>
+        </nav>
 
-      <!-- Neural Networks Project -->
-      <article class="project-card">
-        <img src="images/nn-geometry.png" alt="Neural Network Geometry" class="project-image">
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Neural Network Geometry</h3>
-            <div class="project-tags">
-              <span class="tag">Deep Learning</span>
-              <span class="tag">Mathematics</span>
-              <span class="tag">PyTorch</span>
+        <!-- Featured Project -->
+        <section class="featured-project">
+            <div class="project-content">
+                <div class="project-header">
+                    <h2 class="project-title">Course Recommendation System</h2>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-video-container">
+                    <video 
+                        class="project-video"
+                        controls
+                        preload="none"
+                        poster="data/umichiganai_cover.jpg">
+                        <source src="../images/demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <p class="project-description">
+                  Developed a course recommendation system that leverages large language models 
+                  and retrieval-augmented generation to transform academic advising at large universities. 
+                  The system processes natural language queries about academic interests and generates 
+                  personalized course recommendations across disciplines, complete with detailed rationales 
+                  and confidence assessments. By bridging the gap between how students express interests and 
+                  formal course descriptions, it addresses key challenges in course discovery, particularly 
+                  for new students navigating thousands of options. The project demonstrates technical expertise 
+                  in LLMs, embedding-based retrieval, and bias testing while solving a real institutional need. 
+                  Currently being piloted through the University of Michigan's Atlas platform to enhance academic 
+                  planning and equity in course access.
+                </p>
+                
+                <div class="project-highlights">
+                    <strong>Key Achievements:</strong>
+                    <ul>
+                        <li>Presented at multiple conferences</li>
+                        <li>Paper under review at ACM TORS</li>
+                        <li>Webapp created (waiting on deployment approval)</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/hughvd/UM-CAI-Fellowship">View Code</a>
+                    <a href="../data/CourseRecommenderArxiv.pdf">Read Paper</a>
+                    <a href="../images/midasPoster.pdf">Poster</a>
+                </div>
             </div>
-          </div>
-          <p class="project-description">
-            Research project exploring the geometric properties of neural networks and their impact 
-            on learning dynamics. Focuses on understanding how network architecture influences 
-            training trajectories.
-          </p>
-          <div class="project-links">
-            <a href="#" class="link-primary">View Code</a>
-            <a href="#" class="link-primary">Read Paper</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- Quantum Computing Project -->
-      <article class="project-card">
-        <img src="images/quantum.png" alt="Quantum Circuit Simulator" class="project-image">
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Quantum Circuit Simulator</h3>
-            <div class="project-tags">
-              <span class="tag">Quantum Computing</span>
-              <span class="tag">Python</span>
-              <span class="tag">Linear Algebra</span>
-            </div>
-          </div>
-          <p class="project-description">
-            A quantum circuit simulator implementing basic quantum gates and algorithms. 
-            Includes visualizations of quantum states and interactive circuit building capabilities.
-          </p>
-          <div class="project-links">
-            <a href="#" class="link-primary">View Code</a>
-            <a href="#" class="link-primary">Documentation</a>
-          </div>
-        </div>
-      </article>
-    </section>
+            
+        </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>Website template source available <a href="https://github.com/jonbarron/jonbarron_website">here</a>.</p>
-    </footer>
-  </div>
+
+        <!-- Project Grid -->
+        <section class="project-grid">
+            <!-- N-Body Physics Simulator -->
+            <article class="project-card">
+                <img src="data/shlime.jpg" alt="happyshlime" class="project-image">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">SHLIME: Foiling Adversarial Attacks Fooling LIME and SHAP</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Adversarial ML</span>
+                            <span class="tag">XAI</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        This was a research replication project I worked on for a class. We replicated the paper 
+                        "Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods". I primarily led
+                        understanding and presenting the mathematical ideas behind post-hoc explainer methods like LIME 
+                        and SHAP and proposed our extension idea of combining the two methods to make a more resistant
+                        method. I developed and evaluated our proposed method.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/eduguet/shlime">View Code</a>
+                        <a href="data/shlimePaper.pdf">Paper</a>
+                        <a href="data/SHLIMEposter.pdf">Poster</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Neural Network Geometry -->
+            <article class="project-card">
+                <img src="data/abba.jpg" alt="ABBA" class="project-image">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">A Sensitivity Analysis on ABBA: An Agent-Based Model of the Banking
+                            System</h3>
+                        <div class="project-tags">
+                            <span class="tag">Agent Based Modeling</span>
+                            <span class="tag">Finance</span>
+                            <span class="tag">Netlogo</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A sensitivity analysis on ABBA, a netlogo agent-based model developed by Jorge A. Chan-Lau that models
+                        the banking system. I investigated the sensitivity of bank credit and liquidity failure with respect to 
+                        saver's withdrawl rates and recovered the common sense idea that higher withdrawl rates (lower liquidity) 
+                        leads to greater liquidity failures. This basic fact helps validate the modeling strengths of ABBA.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/hughvd/Abba-Sensitivity-Analysis">View Code</a>
+                        <a href="data/CMPLXSYS 530 Final Project.pdf">Read Paper</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
 </body>
 </html>

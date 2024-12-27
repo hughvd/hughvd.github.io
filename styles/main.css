@@ -4,6 +4,7 @@
 @import 'components/nav.css';
 @import 'components/publications.css';
 @import 'components/profile.css';
+@import 'components/projects.css';
 
 /* Base layout styles */
 .container {

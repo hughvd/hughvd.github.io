@@ -24,3 +24,8 @@ nav {
   .nav-links a:hover {
     color: var(--link-color);
   }
+
+  .nav-links a.active {
+    color: var(--link-color);
+    font-weight: 500;
+}
