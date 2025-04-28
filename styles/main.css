@@ -10,7 +10,7 @@
 
 /* Base layout styles */
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -18,7 +18,7 @@
 .profile {
   display: flex;
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 700px) {

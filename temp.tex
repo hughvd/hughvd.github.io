@@ -1,0 +1,41 @@
+% Title: Linear Algebra Essentials
+% Date: March 2024
+% Subject: Mathematics
+
+\section{Vector Spaces}
+
+A vector space $V$ over a field $F$ is a set of elements called vectors, together with two operations:
+\begin{itemize}
+    \item Vector addition: $+ : V \times V \to V$
+    \item Scalar multiplication: $\cdot : F \times V \to V$
+\end{itemize}
+
+These operations must satisfy the following axioms:
+\begin{enumerate}
+    \item Commutativity: $u + v = v + u$ for all $u,v \in V$
+    \item Associativity: $(u + v) + w = u + (v + w)$ for all $u,v,w \in V$
+    \item Identity: There exists $0 \in V$ such that $v + 0 = v$ for all $v \in V$
+    \item Inverse: For each $v \in V$, there exists $-v \in V$ such that $v + (-v) = 0$
+\end{enumerate}
+
+\section{Linear Transformations}
+
+A linear transformation $T: V \to W$ between vector spaces $V$ and $W$ satisfies:
+\begin{align}
+    T(u + v) &= T(u) + T(v) \\
+    T(\alpha v) &= \alpha T(v)
+\end{align}
+for all $u,v \in V$ and $\alpha \in F$.
+
+\section{Eigenvalues and Eigenvectors}
+
+An eigenvector $v$ of a matrix $A$ is a non-zero vector that satisfies:
+\begin{equation}
+    Av = \lambda v
+\end{equation}
+where $\lambda$ is the corresponding eigenvalue.
+
+The characteristic polynomial of $A$ is:
+\begin{equation}
+    p(\lambda) = \det(A - \lambda I)
+\end{equation} 

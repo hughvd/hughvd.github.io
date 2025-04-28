@@ -5,6 +5,7 @@
     <title>Projects - Hugh Van Deventer V</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/projects.css">
 </head>
 <body>
     <div class="container">
@@ -19,12 +20,20 @@
             </div>
         </nav>
 
+        <!-- Projects Header -->
+        <header class="projects-header">
+            <h1>Projects</h1>
+            <p class="header-description">
+                A collection of my academic and personal projects.
+            </p>
+        </header>
+
         <!-- Featured Project -->
         <section class="featured-project">
-            <div class="project-content">
-                <div class="project-header">
-                    <h2 class="project-title">ExploreBlue</h2>
-                    <div class="project-tags">
+            <div class="featured-content">
+                <div class="featured-header">
+                    <h2 class="featured-title">ExploreBlue</h2>
+                    <div class="featured-tags">
                         <span class="tag">Machine Learning</span>
                         <span class="tag">NLP</span>
                         <span class="tag">LLMs</span>
@@ -32,52 +41,47 @@
                     </div>
                 </div>
 
-                <div class="project-video-container">
-                    <video 
-                        class="project-video"
-                        controls
-                        preload="none"
-                        poster="data/exploreBlueThumbnail.png">
-                        <source src="../images/demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                
-                <p class="project-description">
-                  Developed ExploreBlue, a course recommendation system that leverages large language models 
-                  and retrieval-augmented generation to transform academic advising at large universities. 
-                  The system processes natural language queries about academic interests and generates 
-                  personalized course recommendations across disciplines, complete with detailed rationales 
-                  and confidence assessments. By bridging the gap between how students express interests and 
-                  formal course descriptions, it addresses key challenges in course discovery, particularly 
-                  for new students navigating hundreds of options. The project demonstrates technical expertise 
-                  in LLMs, embedding-based retrieval, and bias testing while solving a real institutional need.
-                </p>
-                
-                <div class="project-highlights">
-                    <strong>Key Achievements:</strong>
-                    <ul>
-                        <li>Presented at multiple conferences</li>
-                        <li>First author paper</li>
-                        <li>Developed full-stack webapp</li>
-                    </ul>
-                </div>
+                <div class="featured-main">
+                    <div class="featured-video">
+                        <video 
+                            controls
+                            preload="none"
+                            poster="data/exploreBlueThumbnail.png">
+                            <source src="../images/demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <div class="featured-info">
+                        <p class="featured-description">
+                            A course recommendation system that leverages large language models and retrieval-augmented 
+                            generation to transform academic advising. The system processes natural language queries 
+                            about academic interests and generates personalized course recommendations across disciplines.
+                        </p>
+                        
+                        <div class="featured-highlights">
+                            <strong>Key Achievements:</strong>
+                            <ul>
+                                <li>Presented at multiple conferences</li>
+                                <li>First author paper</li>
+                                <li>Developed full-stack webapp</li>
+                            </ul>
+                        </div>
 
-                <div class="project-links">
-                    <a href="http://course-publi-rrgyezche29b-470636993.us-east-2.elb.amazonaws.com/">Website</a>
-                    <a href="https://github.com/hughvd/UM-CAI-Fellowship">View Code</a>
-                    <a href="https://arxiv.org/abs/2412.19312">Read Paper</a>
-                    <a href="../images/midasPoster.pdf">Poster</a>
+                        <div class="featured-links">
+                            <a href="http://course-publi-rrgyezche29b-470636993.us-east-2.elb.amazonaws.com/" class="featured-link">Website</a>
+                            <a href="https://github.com/hughvd/UM-CAI-Fellowship" class="featured-link">View Code</a>
+                            <a href="https://arxiv.org/abs/2412.19312" class="featured-link">Read Paper</a>
+                            <a href="../images/midasPoster.pdf" class="featured-link">Poster</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            
         </section>
-
 
         <!-- Project Grid -->
         <section class="project-grid">
-            <!-- N-Body Physics Simulator -->
+            <!-- SHLIME -->
             <article class="project-card">
                 <img src="data/shlime.jpg" alt="happyshlime" class="project-image">
                 <div class="project-content">
@@ -104,7 +108,7 @@
                 </div>
             </article>
 
-            <!-- Neural Network Geometry -->
+            <!-- ABBA -->
             <article class="project-card">
                 <img src="data/abba.jpg" alt="ABBA" class="project-image">
                 <div class="project-content">

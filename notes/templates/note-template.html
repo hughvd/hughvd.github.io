@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Hugh van der Veen</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/notes.css">
+    <link rel="stylesheet" href="../../styles/components/nav.css">
+    <link rel="stylesheet" href="../../styles/components/footer.css">
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <!-- KaTeX JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../../index.html" class="nav-logo">Hugh van der Veen</a>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../projects/index.html">Projects</a>
+                <a href="../../blog/index.html">Blog</a>
+                <a href="../../notes/index.html" class="active">Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="note-container">
+        <main class="note-content">
+            <article class="note-article">
+                <header class="note-header">
+                    <h1>{{title}}</h1>
+                    <div class="note-meta">
+                        <span class="note-date">{{date}}</span>
+                        <span class="note-subject">{{subject}}</span>
+                    </div>
+                </header>
+                <div class="note-body">
+                    {{content}}
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: hughvd@umich.edu</p>
+                <p>GitHub: <a href="https://github.com/hughvd" target="_blank">hughvd</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <p><a href="../../index.html">Home</a></p>
+                <p><a href="../../projects/index.html">Projects</a></p>
+                <p><a href="../../blog/index.html">Blog</a></p>
+                <p><a href="../../notes/index.html">Notes</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hugh van der Veen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html> 

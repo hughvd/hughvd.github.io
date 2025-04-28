@@ -5,6 +5,7 @@
     <title>Blog - Hugh Van Deventer V</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/blog.css">
 </head>
 <body>
     <div class="container">
@@ -18,28 +19,106 @@
                 <a href="/notes">Notes</a>
             </div>
         </nav>
-        <!-- Blog Posts -->
-        <section class="blog-container">
+
+        <!-- Blog Header -->
+        <header class="blog-header">
+            <h1>Blog</h1>
+            <div class="blog-filters">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="ai-ml">AI/ML</option>
+                    <option value="physics">Physics</option>
+                    <option value="philosophy">Philosophy</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search posts...">
+            </div>
+        </header>
+
+        <!-- Featured Posts -->
+        <section class="featured-posts">
+            <h2>Featured Posts</h2>
+            <div class="featured-grid">
+                <article class="featured-post">
+                    <div class="post-header">
+                        <h3>Moral Progress Through the Lens of Optimization</h3>
+                        <div class="post-meta">
+                            <span class="post-date">March 15, 2024</span>
+                            <span class="reading-time">5 min read</span>
+                        </div>
+                        <div class="post-tags">
+                            <span class="tag">Moral Psychology</span>
+                            <span class="tag">Moral Philosophy</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">
+                        An essay covering one of my favorite units in Prof. Mara Bollard's Phil 302 - 
+                        Moral Psychology. Hopefully you can learn a few new frameworks to think about 
+                        understanding and evaluating progress.
+                    </p>
+                    <div class="post-links">
+                        <a href="https://hughvd.substack.com/p/moral-progress-through-the-lens-of" target="_blank" rel="noopener noreferrer">Read on Substack</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Regular Posts Grid -->
+        <section class="blog-grid">
             <article class="blog-post">
-                <div class="project-header">
-                    <h2 class="project-title">Moral Progress Through the Lens of Optimization</h2>
-                    <div class="project-tags">
-                        <span class="tag">Moral Psychology</span>
-                        <span class="tag">Moral Philosophy</span>
-                        <span class="tag">Optimization</span>
+                <div class="post-header">
+                    <h3>Essential Properties and Non-Referring Terms: A Defense Against Counterexamples to Frege and Russell</h3>
+                    <div class="post-meta">
+                        <span class="post-date">4/28/2025</span>
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">Philosophy</span>
+                        <span class="tag">Language</span>
                     </div>
                 </div>
-                <p class="project-description">
-                    An essay covering one of my favorite units in Prof. Mara Bollard's Phil 302 - 
-                    Moral Psychology. Hopefully you can learn a few new frameworks to think about 
-                    understanding and evaluating progress.
+                <p class="post-excerpt">
+                    This is an essay I wrote for Phil 345: Language and Mind taught by Professor James Joyce. I loved this class and liked this essay.
                 </p>
-                <div class="project-links">
-                    <a href="https://substack.com/home/post/p-153665846" target="_blank" rel="noopener noreferrer">Read on Substack</a>
+                <div class="post-links">
+                    <a href="https://hughvd.substack.com/p/essential-properties-and-non-referring">Read on Substack</a>
                 </div>
             </article>
-            <!-- More posts will be added here as you create them -->
+
+            <!-- Physics to ML-->
+            <article class="blog-post">
+                <div class="post-header">
+                    <h3>From Spin Glasses to Self-Attention: A Physicist's View of AI History</h3>
+                    <div class="post-meta">
+                        <span class="post-date">In progress</span>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">Physics</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Mathematics</span>
+                    </div>
+                </div>
+                <p class="post-excerpt">
+                    I am extremely interested in the connections between physics and machine learning. This is a work in progress combining
+                    the ideas and connections I've been thinking about and filling in the (many) gaps in my knowledge.
+                </p>
+                <div class="post-links">
+                    <a href="" class="coming-soon">Coming Soon  </a>
+                </div>
+            </article>
+
+            <!-- More posts will be added here -->
         </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="pagination-btn" disabled>Previous</button>
+            <span class="page-number">Page 1 of 1</span>
+            <button class="pagination-btn" disabled>Next</button>
+        </div>
     </div>
+
+    <script src="../scripts/blog.js"></script>
 </body>
 </html>

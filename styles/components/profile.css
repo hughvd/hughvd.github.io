@@ -1,47 +1,75 @@
 .profile {
     display: flex;
-    gap: 60px;  /* Increased gap between text and image */
+    gap: 60px;
     padding: 20px 0;
-  }
-  
-  .bio {
-    flex: 3;
-  }
-  
-  .bio h1 {  /* For your name */
-    margin-bottom: 30px;  /* Add space below the name */
-  }
-  
-  .photo {
-    flex: 2;
-    margin-top: 80px;  /* This will push the image down to align with paragraphs */
-  }
-  
-  .photo img {
-    width: 100%;
-    display: block;
-  }
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
 
-  .links {
+.bio {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.bio h1 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.photo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links {
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .links a {
+}
+
+.links a {
     margin: 0 10px;
     color: var(--link-color);
     text-decoration: none;
-  }
-  
-  /* For mobile devices */
-  @media (max-width: 768px) {
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: var(--link-color-hover);
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
     .profile {
-      flex-direction: column;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .bio {
+        padding-right: 0;
+    }
+    
+    .bio h1 {
+        text-align: center;
     }
     
     .photo {
-      margin-top: 0;  /* Remove top margin on mobile */
-      max-width: 300px;
-      margin: 0 auto;
+        margin: 20px auto;
+        max-width: 300px;
     }
-  }
+    
+    .photo img {
+        max-width: 100%;
+    }
+}
