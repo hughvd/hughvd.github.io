@@ -1,37 +1,9 @@
 /* Import other stylesheets */
 @import 'colors.css';
 @import 'typography.css';
-@import 'components/nav.css';
+@import '../stylesheet.css';
 @import 'components/publications.css';
 @import 'components/profile.css';
 @import 'components/projects.css';
 @import 'components/blog.css';
 @import 'components/notes.css';
-
-/* Base layout styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.profile {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 700px) {
-  .profile {
-    flex-direction: column;
-  }
-}
-
-html {
-  overflow-y: scroll;
-}
-
-body {
-  margin-right: 0;
-  padding-right: calc(100vw - 100%);
-}
