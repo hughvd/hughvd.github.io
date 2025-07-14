@@ -286,14 +286,67 @@ footer p {
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
+  /* Profile Section Mobile */
   .profile {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   
+  .bio h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bio p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .links a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Publications Mobile */
   .publication {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .publication-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .publication-content h3 a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   /* Mobile Navigation */
