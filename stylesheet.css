@@ -403,21 +403,10 @@ footer p {
 }
 
 /* Global link styles */
-a:link {
-  color: var(--link-color);     /* #3498db */
-  text-decoration: none;
-}
 a:visited {
   color: var(--link-color);     /* keep visited same color */
 }
 a:hover {
   color: #2a80b9;               /* slightly darker on hover */
   text-decoration: underline;   /* optional */
-}
-a:active {
-  color: #1f6391;
-}
-a:focus-visible {
-  outline: 2px solid #9ec9eb;   /* accessible focus */
-  outline-offset: 2px;
 }
