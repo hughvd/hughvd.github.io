@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Blog - Hugh Van Deventer V</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../stylesheet.css">
 </head>
 <body>
     <div class="container">
@@ -23,16 +22,6 @@
         <!-- Blog Header -->
         <header class="blog-header">
             <h1>Blog</h1>
-            <div class="blog-filters">
-                <select id="category-filter">
-                    <option value="all">All Categories</option>
-                    <option value="mathematics">Mathematics</option>
-                    <option value="ai-ml">AI/ML</option>
-                    <option value="physics">Physics</option>
-                    <option value="philosophy">Philosophy</option>
-                </select>
-                <input type="text" id="search-input" placeholder="Search posts...">
-            </div>
         </header>
 
         <!-- Featured Posts -->
@@ -41,6 +30,31 @@
             <div class="featured-grid">
                 <article class="featured-post">
                     <div class="post-header">
+                        <h3>Can We Prompt Our Way to Safety? Comparing System Prompt Styles and Post-Training Effects on Safety Benchmarks</h3>
+                        <div class="post-meta">
+                            <span class="post-date">October 27, 2025</span>
+                            <span class="reading-time">10 min read</span>
+                        </div>
+                        <div class="post-tags">
+                            <span class="tag">AI Safety</span>
+                            <span class="tag">LLM Evaluations</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">
+                        A report on an experiment I conducted for Boaz Barak's "CS 2881r: AI Alignment and Safety" at Harvard. I evaluate the effects of different system prompt types (minimal vs. principles vs. rules) and their combinations on over-refusal, toxic-refusal, and capability benchmarks. 
+                    </p>
+                    <div class="post-links">
+                        <a href="https://www.lesswrong.com/posts/hgMDvLyomQjpKiG2v/cs-2881r-can-we-prompt-our-way-to-safety-comparing-system?utm_campaign=post_share&utm_source=link" target="_blank" rel="noopener noreferrer">Read on Lesswrong</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Regular Posts Grid -->
+        <section class="blog-grid">
+
+            <article class="blog-post">
+                <div class="post-header">
                         <h3>Moral Progress Through the Lens of Optimization</h3>
                         <div class="post-meta">
                             <span class="post-date">March 15, 2024</span>
@@ -60,12 +74,8 @@
                     <div class="post-links">
                         <a href="https://hughvd.substack.com/p/moral-progress-through-the-lens-of" target="_blank" rel="noopener noreferrer">Read on Substack</a>
                     </div>
-                </article>
-            </div>
-        </section>
+            </article>
 
-        <!-- Regular Posts Grid -->
-        <section class="blog-grid">
             <article class="blog-post">
                 <div class="post-header">
                     <h3>Essential Properties and Non-Referring Terms: A Defense Against Counterexamples to Frege and Russell</h3>

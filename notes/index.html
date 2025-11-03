@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Notes - Hugh Van Deventer V</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/notes.css">
+    <link rel="stylesheet" href="../stylesheet.css">
 </head>
 <body>
     <div class="container">
@@ -20,126 +19,94 @@
             </div>
         </nav>
 
-        <!-- Notes Header -->
-        <header class="notes-header">
-            <h1>Notes</h1>
-            <p class="header-description">
-                A collection of my academic notes, gists, and paper notes.
-            </p>
-        </header>
+        <main class="notes-main">
+            <section id="course-notes" class="note-section">
+                <div class="note-section-header">
+                    <h2>Course Notes</h2>
+                    <p>Detailed notes / cheatsheets from coursework.</p>
+                </div>
 
-        <div class="notes-layout">
-            <!-- Table of Contents Sidebar -->
-            <aside class="notes-sidebar">
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li>
-                            <a href="#course-notes" class="active">Course Notes</a>
-                            <ul class="sub-nav">
-                                <li><a href="#math">Mathematics</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#gists">Gists</a>
-                        </li>
-                        <li><a href="#paper-notes">Paper Notes</a></li>
-                    </ul>
-                </nav>
-            </aside>
-
-            <!-- Main Content -->
-            <main class="notes-content">
-                <!-- Course Notes Section -->
-                <section id="course-notes" class="notes-section">
-                    <h1 class="section-title">Course Notes</h1>
-                    
-                    <div id="math" class="subject-section">
-                        <h2 class="subject-title">Mathematics</h2>
-                        <div class="notes-list">
-                            <!-- Numerical Linear Algebra Notes -->
-                            <article class="notes-item">
-                                <div class="notes-item-header">
-                                    <h3>Math 571 - Numerical Linear Algebra</h3>
-                                    <div class="notes-meta">
-                                        <span class="meta-item">December 2024</span>
-                                        <span class="meta-item">PDF</span>
-                                    </div>
+                <div class="note-grid">
+                    <article class="note-card">
+                        <div class="note-card-header">
+                            <div>
+                                <h3>Math 571 · Numerical Linear Algebra</h3>
+                                <div class="note-meta">
+                                    <span>December 2024</span>
+                                    <span>PDF</span>
+                                    <span class="note-meta-topic">Mathematics</span>
                                 </div>
-                                <div class="notes-item-content">
-                                    <p>Notes that I took while studying for the final exam. Screenshots are from Trefethen and Bau 
-                                    "Numerical Linear Algebra". Need to add more on stability and GMRES.</p>
-                                    <div class="tags">
-                                        <span class="tag school-tag">University of Michigan</span>
-                                        <span class="tag">Linear Algebra</span>
-                                        <span class="tag">Numerical Methods</span>
-                                    </div>
-                                </div>
-                                <div class="notes-item-actions">
-                                    <a href="data/571FinalReview.pdf" class="action-link">View PDF</a>
-                                </div>
-                            </article>
-
-                            <!-- Linear Programming Notes -->
-                            <article class="notes-item">
-                                <div class="notes-item-header">
-                                    <h3>Math 561 - Linear Programming</h3>
-                                    <div class="notes-meta">
-                                        <span class="meta-item">December 2024</span>
-                                        <span class="meta-item">PDF (Scanned)</span>
-                                    </div>
-                                </div>
-                                <div class="notes-item-content">
-                                    <p>Handwritten notes that I have accumulated for studying for exams. The 
-                                    chapters are for Jon Lee's "A first course in linear optimization".</p>
-                                    <div class="tags">
-                                        <span class="tag school-tag">University of Michigan</span>
-                                        <span class="tag">Optimization</span>
-                                        <span class="tag">Linear Programming</span>
-                                    </div>
-                                </div>
-                                <div class="notes-item-actions">
-                                    <a href="data/561Notes.pdf" class="action-link">View PDF</a>
-                                </div>
-                            </article>
+                            </div>
+                            <a href="data/571FinalReview.pdf" class="note-action">View PDF</a>
                         </div>
-                    </div>
-                </section>
+                        <div class="note-card-body">
+                            Notes assembled while prepping for the final. Screenshots are from Trefethen and Bau’s
+                            <em>Numerical Linear Algebra</em>, with highlights on SVD intuition, Krylov methods, and decomposition stability.
+                        </div>
+                        <div class="note-tags">
+                            <span class="note-tag school">University of Michigan</span>
+                        </div>
+                    </article>
 
-                <!-- Gists Section -->
-                <section id="gists" class="notes-section">
-                    <h1 class="section-title">Gists</h1>
-                    <p class="section-description">
-                        Concise summaries of key concepts and important things to know about various subjects.
-                    </p>
-
-                    <div class="notes-list">
-                        <!-- Linear Algebra Gist -->
-                        <article class="notes-item">
-                            <div class="notes-item-header">
-                                <h3>Linear Algebra Essentials</h3>
-                                <div class="notes-meta">
-                                    <span class="meta-item">March 2024</span>
+                    <article class="note-card">
+                        <div class="note-card-header">
+                            <div>
+                                <h3>Math 561 · Linear Programming</h3>
+                                <div class="note-meta">
+                                    <span>December 2024</span>
+                                    <span>Scanned PDF</span>
+                                    <span class="note-meta-topic">Mathematics</span>
                                 </div>
                             </div>
-                            <div class="notes-item-content">
-                                <p>A comprehensive overview of the most important concepts in linear algebra, including
-                                vector spaces, linear transformations, eigenvalues, and applications.</p>
+                            <a href="data/561Notes.pdf" class="note-action">View PDF</a>
+                        </div>
+                        <div class="note-card-body">
+                            Handwritten exam notes aligned with Jon Lee’s <em>A First Course in Linear Optimization</em>.
+                            Includes simplex proofs, duality, complementary slackness, and KKT conditions from lecture.
+                        </div>
+                        <div class="note-tags">
+                            <span class="note-tag school">University of Michigan</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="gists" class="note-section">
+                <div class="note-section-header">
+                    <h2>Concept Gists</h2>
+                    <p>Concise writeups of important topics</p>
+                </div>
+
+                <div class="note-grid">
+                    <article class="note-card">
+                        <div class="note-card-header">
+                            <div>
+                                <h3>Linear Algebra Essentials</h3>
+                                <div class="note-meta">
+                                    <span>March 2024</span>
+                                </div>
                             </div>
-                            <div class="notes-item-actions">
-                                <a href="gists/linear-algebra.pdf" class="action-link">Read Gist</a>
-                            </div>
-                        </article>
+                            <a href="gists/linear-algebra.pdf" class="note-action">Read Gist</a>
+                        </div>
+                        <div class="note-card-body">
+                            A comprehensive overview of the most important concepts in linear algebra, including vector spaces, linear transformations, eigenvalues, and applications.
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="paper-notes" class="note-section">
+                <div class="note-section-header">
+                    <h2>Paper Notes</h2>
+                    <p>Short syntheses from papers I’m currently reading. Links coming soon.</p>
+                </div>
+                <div class="note-grid">
+                    <div class="note-empty">
+                        Paper summaries will land here as I publish them throughout the semester.
                     </div>
-
-                </section>
-
-                <!-- Paper Notes Section -->
-                <section id="paper-notes" class="notes-section">
-                    <h1 class="section-title">Paper Notes</h1>
-                    <p class="empty-section-message">Paper notes coming soon...</p>
-                </section>
-            </main>
-        </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <footer>
@@ -147,7 +114,5 @@
           <p>&copy; 2025 Hugh Van Deventer V. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="../scripts/notes.js"></script>
 </body>
 </html>

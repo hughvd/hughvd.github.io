@@ -1,9 +1,2 @@
-/* Import other stylesheets */
-@import 'colors.css';
-@import 'typography.css';
-@import '../stylesheet.css';
-@import 'components/publications.css';
-@import 'components/profile.css';
-@import 'components/projects.css';
-@import 'components/blog.css';
-@import 'components/notes.css';
+/* Legacy entry point; every page should prefer /stylesheet.css */
+@import url("../stylesheet.css");

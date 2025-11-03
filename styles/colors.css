@@ -1,6 +1,2 @@
-:root {
-  --text-primary: #2a2a2a;
-  --text-secondary: #666;
-  --link-color: #2962ff;
-  --border-color: #eee;
-}
+/* Legacy color tokens consolidated into /stylesheet.css */
+@import url("../stylesheet.css");
