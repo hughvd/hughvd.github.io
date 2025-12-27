@@ -26,9 +26,18 @@
 
     <!-- Profile Section -->
     <div class="profile">
+      <div class="photo">
+        <img src="images/headshot.jpg" alt="Hugh Van Deventer" loading="lazy">
+        <div class="photo-name">Hugh Van Deventer V</div>
+        <div class="photo-links">
+          <a href="mailto:hughvandeventer@g.harvard.edu">Email</a>
+          <a href="data/cv.pdf">CV</a>
+          <a href="https://github.com/hughvd">GitHub</a>
+          <a href="https://linkedin.com/in/hughvandeventer">LinkedIn</a>
+        </div>
+      </div>
       <div class="bio">
-        <h1>Hugh Flournoy Van Deventer V</h1>
-        <p class="subtitle">AI Research & Engineering</p>
+        <h2>About</h2>
         <p>
           I am a Master's student at Harvard studying Data Science with a background in Math, Physics, and Computer Science from the University of Michigan. My research interests in AI are focused on interpretability, safety, and the science of deep learning.
         </p>
@@ -36,60 +45,46 @@
           At Harvard, my primary research is on masked diffusion language models within the Tiny Reasoning Model (TRM) framework, developing diffusion-based solvers with explicit latent reasoning states for structured tasks like Sudoku and ARC-style puzzles. I also study how diffusion-learned representations can transfer into autoregressive models to improve compositional reasoning.
         </p>
         <p>
-          I’m also a Winter 2025 <a href="https://futureimpact.group/fellowship">FIG Fellow</a>, working with <a href="https://eleniangelou.commons.gc.cuny.edu">Elani Angelou</a> on how reliably model activations reflect behavior across pretraining and post-training, and on evaluating when activation-based methods (e.g., sparse autoencoders, persona vectors, and probes) succeed or fail as behavior monitors.
+          I'm also a Winter 2025 <a href="https://futureimpact.group/fellowship">FIG Fellow</a>, working with <a href="https://eleniangelou.commons.gc.cuny.edu">Elani Angelou</a> on how reliably model activations reflect behavior across pretraining and post-training, and on evaluating when activation-based methods (e.g., sparse autoencoders, persona vectors, and probes) succeed or fail as behavior monitors.
         </p>
         <p>
           At Michigan, I was a Data Science Fellow at the <a href="https://ai.umich.edu">Center for Academic Innovation</a>, where I developed ExploreBlue, a course recommendation system using LLMs and semantic search under the guidance of <a href="https://lsa.umich.edu/physics/people/faculty/evrard.html">Prof. August Evrard</a> and <a href="https://ai.umich.edu/staff/mark-mills/">Dr. Mark Mills</a>. I also served as a peer advisor for the Physics Department.
         </p>
         <p>
           This summer, I worked as an AI/ML Engineering Intern at <a href="https://www.honeywell.com/us/en">Honeywell</a>, where I worked on AI and classical image processing techniques to automatically extract building layouts from floor plans and generate cost estimates for
-          corporate facility projects. I also built a vibration analysis system that autonomously diagnoses equipment faults by combining signal processing with LLM reasoning.
-        </p>
-        <p>
-          Previously, I was an ML Research Intern at <a href="https://www.mtu.edu/mtri/">Michigan Tech Research Institute</a>, where I worked on ML methods for accelerating inverse problem solving in imaging with the goal of real-time super resolution under the guidance of <a
+          corporate facility projects. Previously, I was an ML Research Intern at <a href="https://www.mtu.edu/mtri/">Michigan Tech Research Institute</a>, where I worked on ML methods for accelerating inverse problem solving in imaging with the goal of real-time super resolution under the guidance of <a
           href="https://www.mtu.edu/mtri/about/staff/directors-management/leblanc/">Dr. Joel LeBlanc</a>, and at <a href="https://www.neurabuild.com">Neurabuild</a> in South Africa, where I developed ML solutions for astronomical site assessment and satellite tracking for the <a
           href="https://www.westernsydney.edu.au/icns/research_projects/current_projects/astrosite">Astrosite</a> project under the guidance of <a
           href="https://www.westernsydney.edu.au/icns/about/people/researchers/gregory_cohen">Prof. Gregory Cohen</a>.
         </p>
-        <div class="links">
-          <a href="mailto:hughvandeventer@g.harvard.edu">Email</a>
-          <a href="data/cv.pdf">CV</a>
-          <a href="https://github.com/hughvd">GitHub</a>
-          <a href="https://linkedin.com/in/hughvandeventer">LinkedIn</a>
-        </div>
-      </div>
-      <div class="photo">
-        <img src="images/headshot.jpg" alt="Hugh Van Deventer" loading="lazy">
-      </div>
-    </div>
 
-    <!-- Publications Section -->
-    <div class="section">
-      <h2>Research & Publications</h2>
+        <h2 style="margin-top: 3rem;">Research & Publications</h2>
 
-      <div class="publication">
-        <div class="publication-image">
-          <img src="images/EmbRecommenderDiagram.png" alt="Course Recommendations System" loading="lazy">
-        </div>
-        <div class="publication-content">
+        <div class="publication">
           <h3>
             <a href="https://arxiv.org/abs/2412.19312">From Interests to Insights: An LLM Approach to Course
               Recommendations Using Natural Language Queries</a>
           </h3>
-          <div class="authors">
-            <strong>Hugh Van Deventer</strong>,
-            Mark Mills, and August Evrard
-          </div>
-          <div class="venue">Preprint, 2025</div>
-          <p>
-            We introduce a novel course recommendation system that combines large language models with semantic search to bridge natural language queries and course descriptions. Our two-stage approach generates idealized course descriptions from student interests, then uses embedding similarity to identify relevant courses. Empirical evaluation demonstrates the system's ability to provide contextually appropriate recommendations with explanatory rationales.
-          </p>
-          <div class="publication-links">
-            <a href="https://arxiv.org/abs/2412.19312" class="paper-link">Read Paper</a>
-            <a href="https://github.com/hughvd/UM-CAI-Fellowship" class="code-link">View Code</a>
+          <div class="publication-body">
+            <div class="publication-image">
+              <img src="images/EmbRecommenderDiagram.png" alt="Course Recommendations System" loading="lazy">
+            </div>
+            <div class="publication-content">
+              <div class="authors">
+                <strong>Hugh Van Deventer</strong>,
+                Mark Mills, and August Evrard
+              </div>
+              <div class="venue">Preprint, 2025</div>
+              <p>
+                We introduce a novel course recommendation system that combines large language models with semantic search to bridge natural language queries and course descriptions. Our two-stage approach generates idealized course descriptions from student interests, then uses embedding similarity to identify relevant courses. Empirical evaluation demonstrates the system's ability to provide contextually appropriate recommendations with explanatory rationales.
+              </p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/abs/2412.19312" class="paper-link">Read Paper</a>
+                <a href="https://github.com/hughvd/UM-CAI-Fellowship" class="code-link">View Code</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
 
     <footer>
@@ -97,6 +92,7 @@
         <p>&copy; 2025 Hugh Van Deventer V. All rights reserved.</p>
       </div>
     </footer>
+
 </body>
 
 </html>
