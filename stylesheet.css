@@ -360,15 +360,19 @@ body {
 
 .paper-link {
   background: var(--text-secondary);
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid var(--text-secondary);
+}
+
+.paper-link:visited {
+  color: #ffffff !important;
 }
 
 .paper-link:hover,
 .paper-link:focus-visible {
   background: var(--primary-color);
   border-color: var(--primary-color);
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none !important;
 }
 
